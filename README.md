@@ -1,29 +1,28 @@
-BOOM
+Accounts Guest
 ============
 
 Automatically add visitor as anonymous guest with userId
 
 ##Features
-- each non-logged in visitor gets a userId, accessible via Accounts and Meteor:userId()
+- each non-logged in visitor gets a userId, accessible via Accounts and Meteor.userId()
 - includes configurable cleanup function
 
 
 ##Installation
 ```sh
-mrt add accounts-base
-mrt add accounts-password
-mrt add accounts-guest
+meteor add accounts-base
+meteor add accounts-password
+meteor add wenape:accounts-guest
 ```
 
 then in client-only code
 ```javascript
-Meteor.loginVisitor()
+Guests.add()
 ```
-
 
 optionally (to clean out old guest accounts) in server-only code
 ```javascript
-Meteor.loginVisitor();
+Guests.add();
 ```
 
 Now Meteor.userId() will be populated for each new visitor, including across reloads

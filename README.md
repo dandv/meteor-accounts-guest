@@ -1,4 +1,4 @@
-meteor-queue
+BOOM
 ============
 
 Automatically add visitor as anonymous guest with userId

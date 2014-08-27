@@ -1,12 +1,10 @@
 Package.describe({
-  summary: "Automatically add visitor as anonymous guest with userId"
+  summary: "Automatically add visitor as anonymous guest with userId",
+  version: "0.1.0"
 });
 
-Package.on_use(function (api) {
-  api.use(['accounts-base', 'accounts-password'], 'client');
-  api.use(['accounts-base'], 'server');
-  api.add_files('accounts-guest-server.js', 'server');
-  api.add_files('accounts-guest-client.js', 'client');
+Package.onUse(function (api) {
+api.versionsFrom('0.9.0');
 });
 
 Package.on_test(function (api) {

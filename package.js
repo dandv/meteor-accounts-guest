@@ -13,5 +13,5 @@ Package.onUse(function (api) {
   api.add_files('accounts-guest-client.js', ['client','server']);
   api.add_files('accounts-guest-server.js', 'server');
 
-  api.export && api.export('Guests', ['client']);
+  api.export('Guests', ['client']);
 });

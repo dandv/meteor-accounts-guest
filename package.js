@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Adds visitors as anonymous guests with a userId",
-  version: "0.1.9",
+  version: "0.1.10",
   git: "https://github.com/Wenape/meteor-accounts-guest.git",
   name: "wenape:accounts-guest"
 });

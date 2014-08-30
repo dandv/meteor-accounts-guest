@@ -1,7 +1,7 @@
 Accounts Guest
 ============
 
-Automatically add visitor as anonymous guest with userId
+Automatically adds visitors as anonymous guests with a userId
 
 ##Features
 - each non-logged in visitor gets a userId, accessible via Accounts and Meteor.userId()

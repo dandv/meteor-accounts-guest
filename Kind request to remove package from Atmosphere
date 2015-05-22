@@ -1,0 +1,10 @@
+Hi @wenape,
+
+I'm one of the Meteor Atmosphere.js moderators. While searching for account guest packages, I found [yours](https://atmospherejs.com/wenape/accounts-guest), which appears to be a very old fork of the @artwells [package](https://atmospherejs.com/artwells/accounts-guest).
+
+Maybe join forces with Art Wells? It's also possible to hide the old package from Atmosphere searches, but still keep it installable by dependent packages and apps:
+
+    meteor admin set-unmigrated wenape:accounts-guest
+
+Thanks,
+Dan
